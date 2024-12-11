@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharp Coding Class</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #34495e;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(45deg, #1abc9c, #3498db);
+      color: white;
+    }
+    section {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .courses, .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .course, .contact-item {
+      flex: 1 1 calc(33% - 20px);
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    @media (max-width: 768px) {
+      .course, .contact-item {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sharp Coding Class</h1>
+    <p>Your gateway to mastering coding, graphic design, and ICT skills</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="hero">
+    <h2>Welcome to Sharp Coding Class</h2>
+    <p>Join us to learn web design, graphic design, and healthy computer practices</p>
+  </div>
+  <section id="about">
+    <h2>About Sharp Coding Class</h2>
+    <p>We provide hands-on training in web design using HTML, CSS, WordPress, graphic design, Scratch programming, and ICT applications like Word, Excel, PowerPoint, and Publisher. Our mission is to equip students with the skills they need for a successful future in technology.</p>
+  </section>
+  <section id="courses" class="courses">
+    <h2>Our Courses</h2>
+    <div class="course">
+      <h3>Web Design</h3>
+      <p>Learn HTML, CSS, and WordPress to build beautiful websites.</p>
+    </div>
+    <div class="course">
+      <h3>Graphic Design</h3>
+      <p>Master tools and techniques for creating stunning visuals.</p>
+    </div>
+    <div class="course">
+      <h3>Scratch Programming</h3>
+      <p>Introduce yourself to programming concepts in a fun way.</p>
+    </div>
+    <div class="course">
+      <h3>ICT Applications</h3>
+      <p>Gain skills in Word, Excel, PowerPoint, and Publisher.</p>
+    </div>
+    <div class="course">
+      <h3>Healthy Computer Usage</h3>
+      <p>Learn safe and efficient ways to use computers.</p>
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-item">
+      <h3>Email</h3>
+      <p>sharpibrah@gmail.com</p>
+    </div>
+    <div class="contact-item">
+      <h3>Phone</h3>
+      <p>0758268218 (WhatsApp)</p>
+      <p>0740292255</p>
+    </div>
+    <div class="contact-item">
+      <h3>WhatsApp Group</h3>
+      <p><a href="https://chat.whatsapp.com/HhSSnuMSMKR3cQhL8Fg3Wr" target="_blank">Join Now</a></p>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2024 Sharp Coding Class | Designed by Ssali Ibrahim</p>
+  </footer>
+</body>
+</html>

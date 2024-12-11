@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            width: 25%;
+            float: left;
+            background-color: #004080;
+            color: white;
+            height: 100vh;
+            overflow-y: auto;
+            padding: 15px 0;
+        }
+        nav a {
+            display: block;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-bottom: 1px solid #ffffff33;
+            cursor: pointer;
+        }
+        nav a:hover {
+            background-color: #0059b3;
+        }
+        main {
+            width: 75%;
+            float: left;
+            padding: 20px;
+        }
+        section {
+            display: none;
+            margin-bottom: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            line-height: 1.6;
+        }
+        section h2 {
+            margin-top: 0;
+            color: #004080;
+        }
+        .note {
+            background-color: #e6f0ff;
+            color: #004080;
+            padding: 15px;
+            border-left: 4px solid #004080;
+            margin: 15px 0;
+        }
+        .highlight {
+            color: #006600;
+            font-weight: bold;
+        }
+        footer {
+            clear: both;
+            text-align: center;
+            background-color: #004080;
+            color: white;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Notes</h1>
+        <p>A Comprehensive Guide to Mastering CSS</p>
+    </header>
+    <nav>
+        <a onclick="showSection('beginner')">Beginner CSS</a>
+        <a onclick="showSection('intermediate')">Intermediate CSS</a>
+        <a onclick="showSection('advanced')">Advanced CSS</a>
+    </nav>
+    <main>
+        <section id="beginner">
+            <h2>Beginner CSS Notes</h2>
+            <p>CSS (Cascading Style Sheets) is used to style and layout web pages. It controls the color, layout, fonts, and positioning of elements on a webpage.</p>
+            <div class="note">
+                <strong>Note:</strong> CSS is essential for creating visually appealing websites.
+            </div>
+            <h3>Basic CSS Syntax</h3>
+            <p>CSS follows the following structure:</p>
+            <pre>
+selector {
+    property: value;
+}
+            </pre>
+            <p>Example:</p>
+            <pre>
+h1 {
+    color: blue;
+}
+            </pre>
+            <h3>Common CSS Properties</h3>
+            <ul>
+                <li><strong>color</strong>: Sets the color of the text.</li>
+                <li><strong>background-color</strong>: Sets the background color of an element.</li>
+                <li><strong>font-size</strong>: Defines the font size of text.</li>
+                <li><strong>padding</strong>: Adds space inside an element.</li>
+                <li><strong>margin</strong>: Adds space outside an element.</li>
+            </ul>
+        </section>
+
+        <section id="intermediate">
+            <h2>Intermediate CSS Notes</h2>
+            <h3>Box Model</h3>
+            <p>Every HTML element is a box. The Box Model consists of content, padding, border, and margin.</p>
+            <div class="note">
+                <strong>Note:</strong> Understanding the Box Model is crucial for managing layout and spacing.
+            </div>
+            <h3>Layout Properties</h3>
+            <ul>
+                <li><strong>display</strong>: Controls how elements are displayed (e.g., <code>block</code>, <code>inline</code>, <code>flex</code>).</li>
+                <li><strong>position</strong>: Controls the positioning of elements (e.g., <code>static</code>, <code>relative</code>, <code>absolute</code>).</li>
+                <li><strong>float</strong>: Floats elements to the left or right, allowing text to wrap around them.</li>
+            </ul>
+
+            <h3>Flexbox</h3>
+            <p>Flexbox is used for creating responsive layouts. Example:</p>
+            <pre>
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+            </pre>
+            <div class="note">
+                <strong>Note:</strong> Flexbox is particularly helpful for creating flexible and centered layouts.
+            </div>
+        </section>
+
+        <section id="advanced">
+            <h2>Advanced CSS Notes</h2>
+            <h3>CSS Grid</h3>
+            <p>CSS Grid is a powerful system for creating complex layouts. Example:</p>
+            <pre>
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+}
+            </pre>
+            <h3>Media Queries</h3>
+            <p>Media queries allow you to apply different styles depending on screen size. Example:</p>
+            <pre>
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+            </pre>
+            <h3>CSS Variables</h3>
+            <p>CSS variables allow for reusable values throughout your stylesheet. Example:</p>
+            <pre>
+:root {
+    --primary-color: #4CAF50;
+}
+
+.button {
+    background-color: var(--primary-color);
+}
+            </pre>
+            <h3>CSS Animations</h3>
+            <p>Animations make websites interactive and engaging. Example:</p>
+            <pre>
+@keyframes example {
+    0% { background-color: red; }
+    100% { background-color: blue; }
+}
+
+.animate {
+    animation: example 2s infinite;
+}
+            </pre>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 CSS Notes. Built for learning and professional use.</p>
+        </footer>
+    </main>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            var sections = document.querySelectorAll('main section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            var selectedSection = document.getElementById(sectionId);
+            selectedSection.style.display = 'block';
+        }
+
+        // By default, show the beginner section
+        showSection('beginner');
+    </script>
+</body>
+</html>

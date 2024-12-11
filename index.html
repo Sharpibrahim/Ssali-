@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharp Coding Class</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav {
+      display: flex;
+      gap: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      background: linear-gradient(45deg, #1abc9c, #3498db);
+      color: white;
+    }
+    section {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .courses {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .course {
+      flex: 1 1 calc(33% - 20px);
+      background: #f4f4f4;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .course a {
+      text-decoration: none;
+      color: #3498db;
+    }
+    @media (max-width: 768px) {
+      .course {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sharp Coding Class</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <div class="hero">
+    <h2>Welcome to Sharp Coding Class</h2>
+    <p>Your gateway to mastering coding, graphic design, and ICT skills.</p>
+  </div>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We provide hands-on training in web design, graphic design, Scratch programming, and ICT applications such as Word, Excel, PowerPoint, and Publisher.</p>
+  </section>
+  <section id="courses" class="courses">
+    <h2>Our Courses</h2>
+    <div class="course">
+      <h3><a href="web-design.html">Web Design</a></h3>
+      <p>Learn HTML, CSS, and WordPress to build professional websites.</p>
+    </div>
+    <div class="course">
+      <h3><a href="#">Graphic Design</a></h3>
+      <p>Master tools and techniques for creating visuals.</p>
+    </div>
+    <div class="course">
+      <h3><a href="#">Scratch Programming</a></h3>
+      <p>Learn programming concepts in a fun and interactive way.</p>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: sharpibrah@gmail.com</p>
+    <p>Phone: 0758268218 (WhatsApp), 0740292255</p>
+    <p>WhatsApp Group: <a href="https://chat.whatsapp.com/HhSSnuMSMKR3cQhL8Fg3Wr" target="_blank">Join Now</a></p>
+  </section>
+  <footer>
+    <p>&copy; 2024 Sharp Coding Class | Designed by Ssali Ibrahim</p>
+  </footer>
+</body>
+</html>

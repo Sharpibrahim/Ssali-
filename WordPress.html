@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WordPress Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4682B4;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        section {
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #e0f7fa;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #00796b;
+        }
+        .collapsible {
+            background-color: #00796b;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            border-radius: 5px;
+        }
+        .collapsible:focus {
+            outline: none;
+        }
+        .active, .collapsible:hover {
+            background-color: #004d40;
+        }
+        .content {
+            padding: 0 15px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+        }
+        .code-block {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            margin: 15px 0;
+            white-space: pre-wrap;
+        }
+        footer {
+            text-align: center;
+            background-color: #4682B4;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>WordPress Notes</h1>
+    <p>A Comprehensive Guide to Mastering WordPress</p>
+</header>
+
+<!-- Introduction Section -->
+<section>
+    <button class="collapsible">1. Introduction to WordPress</button>
+    <div class="content">
+        <h2>What is WordPress?</h2>
+        <p>WordPress is a free, open-source Content Management System (CMS) that powers over 40% of websites globally. It is ideal for blogs, business websites, and e-commerce stores.</p>
+        <button class="collapsible">Note: Versions of WordPress</button>
+        <div class="content">
+            <p>WordPress comes in two versions: WordPress.com (hosted) and WordPress.org (self-hosted).</p>
+        </div>
+    </div>
+</section>
+
+<!-- Key Features Section -->
+<section>
+    <button class="collapsible">2. Key Features of WordPress</button>
+    <div class="content">
+        <ul>
+            <li>User-Friendly Interface for creating websites without coding.</li>
+            <li>Highly Customizable with themes and plugins.</li>
+            <li><span class="highlight">SEO-Friendly</span> with tools like Yoast SEO.</li>
+            <li>Responsive Design for mobile and desktop compatibility.</li>
+            <li>Built-in Media Management to upload and manage files easily.</li>
+        </ul>
+        <button class="collapsible">Note: Flexibility</button>
+        <div class="content">
+            <p>WordPress is an excellent choice for beginners and advanced developers alike due to its flexibility.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Setting Up WordPress -->
+<section>
+    <button class="collapsible">3. Setting Up WordPress</button>
+    <div class="content">
+        <p>Follow these steps to install WordPress:</p>
+        <ol>
+            <li>Download WordPress from <a href="https://wordpress.org" target="_blank">WordPress.org</a>.</li>
+            <li>Upload files to your hosting server using cPanel or FTP.</li>
+            <li>Create a MySQL database and configure the <code>wp-config.php</code> file.</li>
+            <li>Run the installer by visiting your domain (e.g., <span class="highlight">http://yourdomain.com</span>).</li>
+        </ol>
+    </div>
+</section>
+
+<!-- WordPress Dashboard -->
+<section>
+    <button class="collapsible">4. WordPress Dashboard</button>
+    <div class="content">
+        <p>The Dashboard is the control panel of your WordPress website. Key sections include:</p>
+        <ul>
+            <li><span class="highlight">Posts</span>: Create and manage blog posts.</li>
+            <li><span class="highlight">Pages</span>: Create static pages like About Us and Contact.</li>
+            <li><span class="highlight">Appearance</span>: Manage themes, menus, and widgets.</li>
+            <li><span class="highlight">Plugins</span>: Add or remove plugins to enhance functionality.</li>
+            <li><span class="highlight">Settings</span>: Configure general and advanced options.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Themes Section -->
+<section>
+    <button class="collapsible">5. Themes</button>
+    <div class="content">
+        <p>Themes determine the design of your website. You can choose from:</p>
+        <ul>
+            <li><span class="highlight">Free Themes</span>: Available in the WordPress Theme Directory.</li>
+            <li><span class="highlight">Premium Themes</span>: Offer advanced features and customization options.</li>
+        </ul>
+        <button class="collapsible">Tip: Using Page Builders</button>
+        <div class="content">
+            <p>Use page builders like Elementor or WPBakery for easy theme customization.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Plugins Section -->
+<section>
+    <button class="collapsible">6. Plugins</button>
+    <div class="content">
+        <p>Plugins add functionality to your site. Popular plugins include:</p>
+        <ul>
+            <li><span class="highlight">Yoast SEO</span>: Improve search engine optimization.</li>
+            <li><span class="highlight">WooCommerce</span>: Create an online store.</li>
+            <li><span class="highlight">Smush</span>: Optimize images for faster loading.</li>
+            <li><span class="highlight">Wordfence</span>: Enhance website security.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Performance Optimization -->
+<section>
+    <button class="collapsible">7. Performance Optimization</button>
+    <div class="content">
+        <p>Improve your site speed with these tips:</p>
+        <ul>
+            <li>Use caching plugins like <span class="highlight">WP Super Cache</span>.</li>
+            <li>Optimize images using <span class="highlight">TinyPNG</span> or Smush.</li>
+            <li>Implement a Content Delivery Network (CDN) like <span class="highlight">Cloudflare</span>.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Security Tips -->
+<section>
+    <button class="collapsible">8. Security Tips</button>
+    <div class="content">
+        <p>Protect your WordPress site by:</p>
+        <ul>
+            <li>Installing security plugins like <span class="highlight">Wordfence</span>.</li>
+            <li>Using strong passwords and enabling two-factor authentication.</li>
+            <li>Keeping WordPress, themes, and plugins updated.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 WordPress Notes. Built for learning and professional use.</p>
+</footer>
+
+<script>
+    // Collapsible Sections Script
+    var coll = document.getElementsByClassName("collapsible");
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+
+</body>
+</html>

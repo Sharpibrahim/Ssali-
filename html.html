@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Learning Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4682B4;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        section {
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #e0f7fa;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #00796b;
+        }
+        .collapsible {
+            background-color: #00796b;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            border-radius: 5px;
+        }
+        .collapsible:focus {
+            outline: none;
+        }
+        .active, .collapsible:hover {
+            background-color: #004d40;
+        }
+        .content {
+            padding: 0 15px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+        }
+        .code-block {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            margin: 15px 0;
+            white-space: pre-wrap;
+        }
+        footer {
+            text-align: center;
+            background-color: #4682B4;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HTML Learning Notes</h1>
+</header>
+
+<!-- Simple Notes Section -->
+<section>
+    <button class="collapsible">1. Introduction to HTML</button>
+    <div class="content">
+        <h2>What is HTML?</h2>
+        <p>HTML (Hypertext Markup Language) is the standard language for creating webpages. It defines the structure of web pages using elements such as headings, paragraphs, links, and images.</p>
+        <button class="collapsible">Example Code: Simple HTML Page</button>
+        <div class="content">
+            <pre class="code-block">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My First Webpage&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Welcome to My Webpage!&lt;/h1&gt;
+        &lt;p&gt;This is a simple HTML webpage.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+        </div>
+    </div>
+</section>
+
+<!-- Forms Section -->
+<section>
+    <button class="collapsible">2. HTML Forms</button>
+    <div class="content">
+        <h2>Creating a Simple Form</h2>
+        <p>Forms allow users to submit data to a website. You can collect information like names, email addresses, and feedback through forms.</p>
+        <button class="collapsible">Example Code: Simple Contact Form</button>
+        <div class="content">
+            <pre class="code-block">
+&lt;form action="/submit_form" method="POST"&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;&lt;br&gt;
+
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+            </pre>
+        </div>
+    </div>
+</section>
+
+<!-- Multimedia Section -->
+<section>
+    <button class="collapsible">3. Embedding Multimedia</button>
+    <div class="content">
+        <h2>Adding Images and Videos</h2>
+        <p>Images and videos can make your website more interactive and engaging. Use the <code>&lt;img&gt;</code> and <code>&lt;video&gt;</code> tags to embed media content.</p>
+        <button class="collapsible">Example Code: Embedding an Image</button>
+        <div class="content">
+            <pre class="code-block">
+&lt;img src="image.jpg" alt="A beautiful scenery"&gt;
+            </pre>
+        </div>
+        <button class="collapsible">Example Code: Embedding a Video</button>
+        <div class="content">
+            <pre class="code-block">
+&lt;video controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    Your browser does not support the video tag.
+&lt;/video&gt;
+            </pre>
+        </div>
+    </div>
+</section>
+
+<!-- Advanced Notes Section -->
+<section>
+    <button class="collapsible">4. Advanced HTML</button>
+    <div class="content">
+        <h2>HTML5 Semantics</h2>
+        <p>HTML5 introduces semantic tags like <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;article&gt;</code> to help structure content meaningfully.</p>
+        <button class="collapsible">Example Code: Using HTML5 Semantics</button>
+        <div class="content">
+            <pre class="code-block">
+&lt;header&gt;
+    &lt;h1&gt;Website Header&lt;/h1&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+    &lt;article&gt;
+        &lt;h2&gt;Article Title&lt;/h2&gt;
+        &lt;p&gt;This is the content of the article.&lt;/p&gt;
+    &lt;/article&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;
+    &lt;p&gt;Contact: info@website.com&lt;/p&gt;
+&lt;/footer&gt;
+            </pre>
+        </div>
+    </div>
+</section>
+
+<!-- Table Section -->
+<section>
+    <button class="collapsible">5. HTML Tables</button>
+    <div class="content">
+        <h2>Creating Tables</h2>
+        <p>HTML tables are used to display data in rows and columns. Use the <code>&lt;table&gt;</code> tag to create tables, and <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>, and <code>&lt;th&gt;</code> tags for rows, cells, and headers, respectively.</p>
+        <button class="collapsible">Example Code: Simple Table</button>
+        <div class="content">
+            <pre class="code-block">
+&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Jane&lt;/td&gt;
+        &lt;td&gt;30&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+            </pre>
+        </div>
+    </div>
+</section>
+
+<!-- Responsive Web Design Section -->
+<section>
+    <button class="collapsible">6. Responsive Web Design</button>
+    <div class="content">
+        <h2>Making Websites Responsive</h2>
+        <p>Responsive web design ensures your website looks great on all devices, from phones to desktops. You can use media queries to adjust the design based on the screen size.</p>
+        <button class="collapsible">Example Code: Responsive Design with Media Queries</button>
+        <div class="content">
+            <pre class="code-block">
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+            </pre>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 HTML Learning Resources</p>
+</footer>
+
+<script>
+    // Collapsible Sections Script
+    var coll = document.getElementsByClassName("collapsible");
+    for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
